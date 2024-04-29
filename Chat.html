@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Support</title>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+    <div class="main chat_block">
+        <div class="chats">
+            <div class="chats__search">
+                <input type="text" placeholder="Поиск" class="chats__search__input">
+            </div>
+            <div id="chats" class="chats__block">
+                <!-- <div class="chat"><img src="./img/JPG/logo.jpg" alt="" class="chat__icon">
+                    <span class="chat__name">
+                        <h2 class="chat__header">Техническая поддержка</h2>
+                        <p class="chat__last">Анектод дня</p>
+                    </span>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="dialog">
+            <div class="dialog__header">
+                <img id="avatar" src="./img/JPG/avatarChat.jpg" alt="" class="dialog__header__img">
+                <h2 id="name" class="dialog__header__name">Техническая поддержка</h2>
+            </div>
+            <div class="massager">
+                <div id="massager" class="massager__block">
+                    <!-- <span class="massage me"> <img src="./img/JPG/logo.jpg" alt="" class="massage__avatar">
+                        <p class="massage__text">Анекдот хочешь?</p>
+                    </span>
+                    <span class="massage client"> <img src="./img/JPG/logo.jpg" alt="" class="massage__avatar">
+                        <p class="massage__text">Ну давай</p>
+                    </span> -->
+                </div>
+            </div>
+            <div class="textarea">
+                <button class="textarea__file"><img src="./img/PNG/Attach.png" alt="" class="textarea__file__png">
+                </button>
+                <textarea name="" id="textarea" rows="1" class="textarea__text" placeholder="Задать вопрос"></textarea>
+                <button id="massageBtn" class="textarea__send"><svg width="47" height="40" viewBox="0 0 47 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 40V25L19.7895 20L0 15V0L47 20L0 40Z" fill="#4C4C4C" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script defer src="./js/chat.js"></script>
+</body>
+
+</html>

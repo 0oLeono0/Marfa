@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="registration-form">
+        <form method="post" class="registration-form__body">
+            <h1 class="registration-form__header">Регистрация</h1>
+            <div class="registration-form__field">
+                <input type="text" id="fullName" name="fullName" placeholder="ФИО" class="registration-form__input" required>
+            </div>
+    
+            <div class="registration-form__field">
+                <input type="email" id="email" name="email" placeholder="Почта" class="registration-form__input" required>
+            </div>
+    
+            <div class="registration-form__field">
+                <input type="password" id="password" name="password" placeholder="Пароль" class="registration-form__input" required>
+            </div>
+    
+            <div class="registration-form__field">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Повторный пароль" class="registration-form__input" required>
+            </div>
+    
+            <div class="registration-form__field">
+                <input type="url" id="vkLink" name="vkLink" placeholder="Сcылка на ВК (не обязательно)" class="registration-form__input">
+            </div>
+    
+            <div class="registration-form__field">
+                <button id="registration-form__submit" type="submit" class="registration-form__submit">Зарегистрироваться</button>
+            </div>
+            <div class="registration-form__field">
+                <input type="submit" value="Зарегистрироваться через ВК" class="registration-form__submit--vk">
+            </div>
+        </form>
+    </div>
+    <script defer src="./js/script.js"></script>
+</body>
+</html>

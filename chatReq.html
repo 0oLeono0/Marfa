@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Support</title>
+    <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+    <div class="main chat_block">
+        <div class="chats">
+            <div class="chats__search">
+                <input type="text" placeholder="Поиск" class="chats__search__input">
+            </div>
+            <div class="left">
+                <div class="info">
+                    <h1 class="left__header">Имя заявки</h1>
+                    <p class="left__text">Статус заявки:<span>Активна</span></p>
+                    <p class="left__text">Ответственный:<span>Марфа Кузнецова</span></p>
+                    <p class="left__text">Оценки работы системы</p>
+                    <p class="left__text">Работа системы:<span>10</span></p>
+                    <p class="left__text">Работа чат-бота:<span>10</span></p>
+                    <p class="left__text">Работа сотрудника:<span>10</span></p>
+                    <p class="left__text">Отзыв:</p>
+                    <p class="left__text feedback">Забавно, прикольно, интересно, круто, классно, хайпово, здорово, чудно
+                        и т.д. и т.п.</p>
+                </div>
+                <div class="buttons">
+                    <a href="./request.html" class="all">
+                        <svg width="68" height="54" viewBox="0 0 68 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.8 54C4.93 54 3.32973 53.3396 1.9992 52.0189C0.668667 50.6981 0.00226667 49.1085 0 47.25V6.75C0 4.89375 0.6664 3.30525 1.9992 1.9845C3.332 0.663749 4.93227 0.00225 6.8 0H27.2L34 6.75H61.2C63.07 6.75 64.6714 7.4115 66.0042 8.7345C67.337 10.0575 68.0023 11.646 68 13.5V47.25C68 49.1062 67.3347 50.6959 66.0042 52.0189C64.6737 53.3419 63.0723 54.0022 61.2 54H6.8Z"
+                                fill="#F2F2F2" />
+                        </svg>
+                        Все заявки
+                    </a>
+                    <a class="all" href="./rate.html">
+                        <svg width="56" height="54" viewBox="0 0 56 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.71 54L15.26 34.0342L0 20.6053L20.16 18.8289L28 0L35.84 18.8289L56 20.6053L40.74 34.0342L45.29 54L28 43.4132L10.71 54Z"
+                                fill="#F2F2F2" />
+                        </svg>
+                        Рейтинг
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="dialog">
+            <div class="dialog__header">
+                <img src="./img/JPG/logo.jpg" alt="" class="dialog__header__img">
+                <h2 class="dialog__header__name">Техническая поддержка</h2>
+            </div>
+            <div class="massager">
+                <div class="massager__block">
+                </div>
+            </div>
+            <div class="textarea">
+                <button class="textarea__file"><img src="./img/PNG/Attach.png" alt="" class="textarea__file__png">
+                </button>
+                <textarea name="" id="" rows="1" class="textarea__text" placeholder="Задать вопрос"></textarea>
+                <button class="textarea__send"><svg width="47" height="40" viewBox="0 0 47 40" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 40V25L19.7895 20L0 15V0L47 20L0 40Z" fill="#4C4C4C" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script defer src="./js/script.js"></script>
+</body>
+
+</html>
