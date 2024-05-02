@@ -16,19 +16,22 @@
             </div>
             <div class="left">
                 <div class="info">
-                    <h1 class="left__header">Имя заявки</h1>
-                    <p class="left__text">Статус заявки:<span>Активна</span></p>
-                    <p class="left__text">Ответственный:<span>Марфа Кузнецова</span></p>
+                    <h1 id="client" class="left__header">Имя заявки</h1>
+                    <p class="left__text">Статус заявки:<span id="status">Активна</span></p>
+                    <p class="left__text">Ответственный:<span id="employee">Марфа Кузнецова</span></p>
                     <p class="left__text">Оценки работы системы</p>
-                    <p class="left__text">Работа системы:<span>10</span></p>
-                    <p class="left__text">Работа чат-бота:<span>10</span></p>
-                    <p class="left__text">Работа сотрудника:<span>10</span></p>
+                    <p class="left__text">Работа системы:<span id="sistem">10</span></p>
+                    <p class="left__text">Работа чат-бота:<span id="bot">10</span></p>
+                    <p class="left__text">Работа сотрудника:<span id="me">10</span></p>
                     <p class="left__text">Отзыв:</p>
-                    <p class="left__text feedback">Забавно, прикольно, интересно, круто, классно, хайпово, здорово, чудно
+                    <p class="left__text feedback" id="feedback">Забавно, прикольно, интересно, круто, классно, хайпово, здорово, чудно
                         и т.д. и т.п.</p>
                 </div>
+                <div class="registration-form__field">
+                    <button id="registration-form__submit" type="submit" class="registration-form__submit" required >Завершить</button>
+                </div>
                 <div class="buttons">
-                    <a href="./request.html" class="all">
+                    <a id="all" href="./request.html" class="all">
                         <svg width="68" height="54" viewBox="0 0 68 54" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M6.8 54C4.93 54 3.32973 53.3396 1.9992 52.0189C0.668667 50.6981 0.00226667 49.1085 0 47.25V6.75C0 4.89375 0.6664 3.30525 1.9992 1.9845C3.332 0.663749 4.93227 0.00225 6.8 0H27.2L34 6.75H61.2C63.07 6.75 64.6714 7.4115 66.0042 8.7345C67.337 10.0575 68.0023 11.646 68 13.5V47.25C68 49.1062 67.3347 50.6959 66.0042 52.0189C64.6737 53.3419 63.0723 54.0022 61.2 54H6.8Z"
@@ -50,18 +53,24 @@
 
         <div class="dialog">
             <div class="dialog__header">
-                <img src="./img/JPG/logo.jpg" alt="" class="dialog__header__img">
-                <h2 class="dialog__header__name">Техническая поддержка</h2>
+                <img id="avatar" src="./img/JPG/employeetAvatarChat.jpg" alt="" class="dialog__header__img">
+                <h2 id="name" class="dialog__header__name">Техническая поддержка</h2>
             </div>
             <div class="massager">
-                <div class="massager__block">
+                <div id="massager" class="massager__block">
+                    <!-- <span class="massage me"> <img src="./img/JPG/logo.jpg" alt="" class="massage__avatar">
+                        <p class="massage__text">Анекдот хочешь?</p>
+                    </span>
+                    <span class="massage client"> <img src="./img/JPG/logo.jpg" alt="" class="massage__avatar">
+                        <p class="massage__text">Ну давай</p>
+                    </span> -->
                 </div>
             </div>
             <div class="textarea">
                 <button class="textarea__file"><img src="./img/PNG/Attach.png" alt="" class="textarea__file__png">
                 </button>
-                <textarea name="" id="" rows="1" class="textarea__text" placeholder="Задать вопрос"></textarea>
-                <button class="textarea__send"><svg width="47" height="40" viewBox="0 0 47 40" fill="none"
+                <textarea name="" id="textarea" rows="1" class="textarea__text" placeholder="Задать вопрос"></textarea>
+                <button id="massageBtn" class="textarea__send"><svg width="47" height="40" viewBox="0 0 47 40" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M0 40V25L19.7895 20L0 15V0L47 20L0 40Z" fill="#4C4C4C" />
                     </svg>
@@ -69,7 +78,7 @@
             </div>
         </div>
     </div>
-    <script defer src="./js/script.js"></script>
+    <script defer src="./js/chatReq.js"></script>
 </body>
 
 </html>

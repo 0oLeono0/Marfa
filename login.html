@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/style.css">
+    <title>Registration</title>
+</head>
+<body>
+    <div class="registration-form">
+        <form method="post" class="registration-form__body">
+            <h1 class="registration-form__header">Войти</h1>
+            <div class="registration-form__field">
+                <input type="email" id="email" name="email" placeholder="Почта" class="registration-form__input" required>
+            </div>
+    
+            <div class="registration-form__field">
+                <input type="password" id="password" name="password" placeholder="Пароль" class="registration-form__input" required>
+            </div>
+    
+            <div class="registration-form__field">
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Повторный пароль" class="registration-form__input" required>
+            </div>
+            <div class="registration-form__field">
+                <button id="registration-form__submit" type="submit" class="registration-form__submit" required >Войти</button>
+            </div>
+            <div class="registration-form__field">
+                <a id="registration-form__enter" href="/index.html" class="registration-form__submit">Зарегистрироваться</a>
+            </div>
+        </form>
+    </div>
+    <script defer src="./js/login.js"></script>
+</body>
+</html>

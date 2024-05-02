@@ -29,12 +29,15 @@
             <div class="registration-form__field">
                 <input type="url" id="vkLink" name="vkLink" placeholder="Сcылка на ВК (не обязательно)" class="registration-form__input">
             </div>
+            <div class="registration-form__field">
+                <input id="checkbox" type="checkbox" class="checkbox">Я даю согласие на обработку своих персональных данных
+            </div>
     
             <div class="registration-form__field">
-                <button id="registration-form__submit" type="submit" class="registration-form__submit">Зарегистрироваться</button>
+                <button id="registration-form__submit" type="submit" class="registration-form__submit" required >Зарегистрироваться</button>
             </div>
             <div class="registration-form__field">
-                <input type="submit" value="Зарегистрироваться через ВК" class="registration-form__submit--vk">
+                <a id="registration-form__enter" href="/login.html" class="registration-form__submit">Войти</a>
             </div>
         </form>
     </div>

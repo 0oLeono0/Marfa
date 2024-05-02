@@ -302,7 +302,7 @@ section {
     color: #000;
     padding: 0.5208333333vw 1.0416666667vw;
     border-radius: 1.3020833333vw;
-    text-align: center;
+    text-align: left;
     display: inline-block; }
     .massage__text::after {
       content: '';
@@ -313,14 +313,14 @@ section {
       border-style: solid;
       border: 0.5208333333vw solid transparent;
       z-index: -1; }
-  .massage.client .massage__text {
+  .massage.me .massage__text {
     background-color: #F2F2F2; }
-    .massage.client .massage__text::after {
+    .massage.me .massage__text::after {
       border-bottom: 0.5208333333vw solid #F2F2F2;
       border-left: 0.5208333333vw solid #F2F2F2; }
-  .massage.me .massage__text {
+  .massage.employee .massage__text {
     background-color: #FFD096; }
-    .massage.me .massage__text::after {
+    .massage.employee .massage__text::after {
       border-bottom: 0.5208333333vw solid #FFD096;
       border-left: 0.5208333333vw solid #FFD096; }
 
@@ -362,14 +362,30 @@ section {
     border: 0; }
 
 .left {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 87vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #000;
   padding: 1.8229166667vw;
-  padding-top: 0; }
+  padding-top: 0;
+  padding-bottom: 2.6041666667vw;
+  background-color: #F2F2F2; }
   .left__header {
-    font-size: 2.5vw;
+    font-size: 1.6666666667vw;
     font-weight: 600; }
-  .left .info {
-    margin-bottom: 7.8125vw; }
   .left__text {
     margin: 0;
     display: -webkit-box;
@@ -464,16 +480,21 @@ section {
     font-size: 1.25vw; }
   .col__block {
     background-color: #F2F2F2;
+    -webkit-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
     padding: 2.0833333333vw;
-    font-size: 1.6666666667vw; }
+    font-size: 1.25vw;
+    cursor: pointer; }
     .col__block__header {
       font-weight: 600;
-      font-size: 1.6666666667vw;
+      font-size: 1.25vw;
       margin: 0; }
     .col__block__date {
       margin: 0; }
     .col__block__number {
       margin: 0; }
+    .col__block:hover {
+      background-color: #d9d9d9; }
 
 .block {
   border: 1px solid #000;

@@ -220,7 +220,7 @@
         color: #000;
         padding: vw(10) vw(20);
         border-radius: vw(25);
-        text-align: center;
+        text-align: left;
         display: inline-block;
 
         &::after {
@@ -234,7 +234,7 @@
             z-index: -1;
         }
     }
-    &.client {
+    &.me {
         .massage__text {
             background-color: $color-white;
     
@@ -245,7 +245,7 @@
         }
     }
 
-    &.me {
+    &.employee {
         .massage__text {
             background-color: #FFD096;
     
@@ -289,15 +289,20 @@
 }
 
 .left {
+    box-sizing: border-box;
+    height: 87vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     color: #000;
     padding: vw(35);
     padding-top: 0;
+    padding-bottom: vw(50);
+    background-color: $color-white;
     &__header {
-        font-size: vw(48);
+        font-size: vw(32);
         font-weight: 600;
-    }
-    & .info {
-        margin-bottom: vw(150);
     }
     &__text {
         margin: 0;
@@ -374,11 +379,13 @@
     }
     &__block {
         background-color: $color-white;
+        transition: background-color 0.3s ease;
         padding: vw(40);
-        font-size: vw(32);
+        font-size: vw(24);
+        cursor: pointer;
         &__header {
             font-weight: 600;
-            font-size: vw(32);
+            font-size: vw(24);
             margin: 0;
         }
         &__date {
@@ -386,6 +393,9 @@
         }
         &__number {
             margin: 0;
+        }
+        &:hover {
+            background-color: darken($color-white, 10%);
         }
     }
 }
